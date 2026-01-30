@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="background-grid"></div>
+    <div class="floating-orbs"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                Yash Hingane
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="terminal-frame">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <div class="btn-close"></div>
+                    <div class="btn-minimize"></div>
+                    <div class="btn-maximize"></div>
+                </div>
+                <span>portfolio.jsx</span>
+            </div>
+            <div class="terminal-content">
+                <div class="code-line">
+                    <span class="code-keyword">const</span> <span class="code-function">portfolio</span> = () =&gt; {
+                </div>
+                <div class="code-line indent-1">
+                    <span class="code-keyword">return</span> (
+                </div>
+                <div class="code-line indent-2">
+                    &lt;<span class="code-tag">Developer</span>&gt;
+                </div>
+                <div class="code-line indent-3">
+                    <span class="code-attr">name</span>="Yash Hingane"
+                </div>
+                <div class="code-line indent-3">
+                    <span class="code-attr">title</span>="Software Engineer"
+                </div>
+                <div class="code-line indent-3">
+                    <span class="code-attr">location</span>=<span class="code-string">"Bengaluru, India"</span>
+                </div>
+                <div class="code-line indent-3">
+                    <span class="code-attr">skills</span>={[<span class="code-string">"Python", "C++", "PostgreSQL", "Google Cloud"</span>]}
+                </div>
+                <div class="code-line indent-3">
+                    <span class="code-attr">passionate</span>=<span class="code-boolean">true</span>
+                </div>
+                <div class="code-line indent-2">
+                    /&gt;
+                </div>
+                <div class="code-line indent-1">
+                    );
+                </div>
+                <div class="code-line">}
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#projects" class="cta-button">Explore My Work</a> -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="code-bracket">01.</span> About Me</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a software engineer based in Bengaluru and an IIT Roorkee alumnus with a passion for building robust systems. I thrive on solving complex problems - the kind that twist your head and make you question your confidence (yeah, those ones).</p>
+                    <p>I'm a lifelong learner open to new technology, but I'm a pragmatist at heart: if it can be built with the current stack, build it. I don't follow the hype blindly.</p>
+                    <p>I believe in the quote below... </p>
+                    <blockquote class="quote">
+                        "The woods are lovely, dark and deep... but I have promises to keep, and miles to go before I sleep."
+                        <cite>— Robert Frost</cite>
+                    </blockquote>
+                    <p>Let's connect if you want to chat about tech, F1, or good books.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="code-bracket">02.</span> Featured Projects</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3 1.2 0 2.3-.08 3.3-.22"></path>
+                            <circle cx="17" cy="18" r="4" fill="none" />
+                            <path d="M19.8 20.8 22 23" />
+                        </svg>
+                    </div>
+                    <h3><span class="project-icon-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3 1.2 0 2.3-.08 3.3-.22"></path>
+                            <circle cx="17" cy="18" r="4" fill="none" />
+                            <path d="M19.8 20.8 22 23" />
+                        </svg></span>Knowledge Foundry</h3>
+                    <p>Full-stack RAG system for scientific PDFs with citation-backed Q&A. Implements hybrid search (semantic + keyword + fuzzy) with 3.5s end-to-end latency.</p>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                        <span>Qdrant</span>
+                        <span>Redis</span>
+                        <span>Google Gemini</span>
+                        <span>Next.js</span>
+                    </div>
+                    <a href="https://github.com/hash-ira" class="project-link">View on GitHub →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg>
+                    </div>
+                    <h3><span class="project-icon-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg></span>Multi-threaded Chatroom</h3>
+                    <p>C++ based multithreaded server supporting 25 concurrent clients with real-time communication using socket programming and mutex synchronization.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                        <span>Multithreading</span>
+                        <span>Socket Programming</span>
+                        <span>Mutex Locks</span>
+                    </div>
+                    <a href="https://github.com/hash-ira/multithreaded_server_chat_engine" class="project-link">View on GitHub →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18V5l12-2v13"></path>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <circle cx="18" cy="16" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3><span class="project-icon-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18V5l12-2v13"></path>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <circle cx="18" cy="16" r="3"></circle>
+                        </svg></span>Lyriks</h3>
+                    <p>A responsive music discovery platform featuring global charts and location-based trends, built for performance with React and Redux Toolkit.</p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>TailwindCSS</span>
+                        <span>Redux Toolkit</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <a href="https://github.com/hash-ira/lyriks-music-player" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2><span class="code-bracket">03.</span> Get In Touch</h2>
+                <div class="header-line"></div>
+            </div>
+            <p class="contact-text">I'm always open to new opportunities and interesting projects. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:yash.hingane.w@gmail.com" class="contact-link">Email</a>
+                <a href="https://github.com/hash-ira" class="contact-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/yash-hingane-3b08ab328/" class="contact-link">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Yash Hingane. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
